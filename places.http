@@ -1,0 +1,24 @@
+### Get all places
+GET http://localhost:5000/places
+### Get place by id
+GET http://localhost:5000/place/3
+### Create place
+POST http://localhost:5000/places
+Content-Type: application/json
+
+{
+    "name":"Barrio La Central",
+    "direccion":"KR 65 19A23"
+}
+
+
+### Delete place
+DELETE http://localhost:5000/place/2
+### Update place
+PUT http://localhost:5000/place/3
+Content-Type: application/json
+
+{
+    "name":"Barrio El silencio",
+    "direccion":"KR 65 19A23"
+}
